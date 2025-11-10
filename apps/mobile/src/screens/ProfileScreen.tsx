@@ -13,7 +13,7 @@ import {
 import { isValidEmail, capitalize, isEmpty } from '@monorepo/shared';
 
 // Import images from local assets
-const placeholderImage = require('../../assets/images/placeholder.png');
+const placeholderImage = require('../../assets/images/placeholder.jpg');
 
 function ProfileScreen(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';

@@ -11,7 +11,7 @@ import {
 } from "@monorepo/shared";
 import Link from "next/link";
 import Image from "next/image";
-import placeholderImg from "@monorepo/shared/assets/images/placeholder.png";
+import placeholderImg from "@monorepo/shared/assets/images/placeholder.jpg";
 import { useState } from "react";
 
 export default function About() {

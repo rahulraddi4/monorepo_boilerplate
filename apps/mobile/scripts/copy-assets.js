@@ -14,7 +14,7 @@ if (!fs.existsSync(targetDir)) {
   fs.mkdirSync(targetDir, { recursive: true });
 }
 
-// Copy all PNG files
+// Copy all image files
 fs.readdirSync(sourceDir).forEach(file => {
   if (
     file.endsWith('.png') ||

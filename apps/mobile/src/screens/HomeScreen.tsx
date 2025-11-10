@@ -13,7 +13,7 @@ import {
 import { useCounter, formatCurrency, formatDate } from '@monorepo/shared';
 
 // Import images from local assets
-const logoImage = require('../../assets/images/logo.png');
+const logoImage = require('../../assets/images/logo.jpg');
 
 function HomeScreen(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';

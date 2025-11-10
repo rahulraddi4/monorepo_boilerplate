@@ -10,8 +10,8 @@ import {
 } from "@monorepo/shared";
 import Link from "next/link";
 import Image from "next/image";
-import logoImg from "@monorepo/shared/assets/images/logo.png";
-import bannerImg from "@monorepo/shared/assets/images/banner.png";
+import logoImg from "@monorepo/shared/assets/images/logo.jpg";
+import bannerImg from "@monorepo/shared/assets/images/banner.jpg";
 
 export default function Home() {
   const { count, increment, decrement, reset }: any = useCounter(0);

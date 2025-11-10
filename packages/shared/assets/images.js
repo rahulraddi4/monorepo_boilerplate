@@ -1,23 +1,18 @@
 // Image paths for web and mobile
 // For web: use these paths directly in Next.js Image component
-// For mobile: use the exported image sources directly
+// For mobile: use the mobile app's local assets instead (apps/mobile/assets/images/)
 
 export const IMAGES = {
-  logo: "../assets/images/logo.png",
-  placeholder: "../assets/images/placeholder.png",
-  banner: "../assets/images/banner.png",
+  logo: "../assets/images/logo.jpg",
+  placeholder: "../assets/images/placeholder.jpg",
+  banner: "../assets/images/banner.jpg",
 };
 
-// Direct image exports for React Native
-export const logoImage = require("./images/logo.png");
-export const placeholderImage = require("./images/placeholder.png");
-export const bannerImage = require("./images/banner.png");
-
-console.log("Image exports:", {
-  logoImage,
-  placeholderImage,
-  bannerImage,
-});
+// Direct image exports for React Native - WEB ONLY
+// Mobile apps should import from their local assets folder
+export const logoImage = require("./images/logo.jpg");
+export const placeholderImage = require("./images/placeholder.jpg");
+export const bannerImage = require("./images/banner.jpg");
 
 // Helper function to get image source for React Native
 export const getImageSource = (imageName) => {
@@ -26,9 +21,5 @@ export const getImageSource = (imageName) => {
     placeholder: placeholderImage,
     banner: bannerImage,
   };
-  console.log(
-    `getImageSource called with: ${imageName}`,
-    IMAGE_SOURCES[imageName]
-  );
   return IMAGE_SOURCES[imageName];
 };
