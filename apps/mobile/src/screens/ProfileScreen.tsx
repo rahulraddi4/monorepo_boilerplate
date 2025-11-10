@@ -125,7 +125,6 @@ const styles = StyleSheet.create({
   imageContainer: {
     alignItems: 'center',
     marginBottom: 24,
-    backgroundColor: '#777',
   },
   profileImage: {
     width: 150,
