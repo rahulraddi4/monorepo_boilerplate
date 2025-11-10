@@ -1,0 +1,11 @@
+{
+  "name": "@monorepo/shared",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "private": true,
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.72.0"
+  }
+}
